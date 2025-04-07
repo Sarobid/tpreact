@@ -26,9 +26,14 @@ function MainContent(){
 }
 
 function Footer() {
+  const [annee, setAnnee] = useState(new Date().getFullYear());
+  setTimeout(() => {
+    setAnnee(new Date().getFullYear());
+  }
+  , 1000);
   return (
     <div style={{ position: 'fixed', left:0, bottom:0, width:'100%', textAlign:'center' }}>
-      <p>Tous droits réservés - ANDRIATSEHENO Mbolatiana Anjarasoa</p>
+      <p> © {annee} - ANDRIATSEHENO Mbolatiana Anjarasoa, Tous droits réservés</p>
     </div>
   )
 }   
