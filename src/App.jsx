@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import Menu from './components/Menu';
 import TableauData from './components/TableauData';
 
 function Header() {
   return (
     <div>
+      <Menu />
       <a href="https://react.dev" target="_blank">
         <img src={reactLogo} className="logo react" alt="React logo" />
       </a>
