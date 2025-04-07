@@ -12,10 +12,17 @@ function Header() {
     </div>
   )
 }
+
+function MainContent(){
+  return (
+      <p>Ici, nous afficherons des informations interessantes :)</p>
+  )
+}
 function App() {
   return (
     <>
       <Header />
+      <MainContent />
     </>
   )
 }
