@@ -18,11 +18,20 @@ function MainContent(){
       <p>Ici, nous afficherons des informations interessantes :)</p>
   )
 }
+
+function Footer() {
+  return (
+    <div style={{ position: 'fixed', left:0, bottom:0, width:'100%', textAlign:'center' }}>
+      <p>Tous droits réservés - ANDRIATSEHENO Mbolatiana Anjarasoa</p>
+    </div>
+  )
+}   
 function App() {
   return (
     <>
       <Header />
       <MainContent />
+      <Footer />
     </>
   )
 }
