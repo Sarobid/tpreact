@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import reactLogo from './assets/react.svg';
+import TableauData from './components/TableauData';
 
 function Header() {
   return (
@@ -21,8 +22,11 @@ function MainContent(){
   }
   , 1000);
   return (
+    <div className="card">
       <p>Bonjour, on est le {date.getDay()}, {date.getMonth()}, {date.getFullYear()} et il est {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}</p>
-  )
+      <TableauData itemTrier="grade" />
+    </div>
+     )
 }
 
 function Footer() {
@@ -32,7 +36,7 @@ function Footer() {
   }
   , 1000);
   return (
-    <div style={{ position: 'fixed', left:0, bottom:0, width:'100%', textAlign:'center' }}>
+    <div style={{ position: 'fixed', left:0, bottom:0, width:'100%', textAlign:'center', color:'white', backgroundColor:'black', padding:'10px'}}>
       <p> © {annee} - ANDRIATSEHENO Mbolatiana Anjarasoa, Tous droits réservés</p>
     </div>
   )
